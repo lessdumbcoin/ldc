@@ -6,7 +6,7 @@
     <title>Less Dumb Coin ($LDC)</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Arial, sans-serif, sans-serif;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
@@ -64,6 +64,7 @@
             margin-left: auto;
             margin-right: auto;
         }
+        /* Updated CA Section Styles */
         .ca-box {
             text-align: center;
             margin: 20px 0;
@@ -89,20 +90,21 @@
         .copy-btn:hover {
             background: #0056b3;
         }
+        /* New Solana Network Styles */
         .network-info {
             text-align: center;
             margin: 15px 0;
             padding: 15px;
-            background: none;
+            background: #fff3e0;
             border-radius: 15px;
         }
         .solana-logo {
-            width: 160px;
+            width: 120px;
             margin: 10px auto;
             display: block;
         }
         .network-text {
-            color: black;
+            color: #00ff88;
             font-weight: bold;
             margin: 5px 0;
         }
@@ -120,6 +122,8 @@
     <div class="section">
         <h2>📖 Backstory</h2>
         <p>Inspired by Elon Musk’s legendary 2021 tweet, Less Dumb Coin ($LDC) embraces the idea that cash is dumb, Bitcoin is adventurous, but there’s a perfect middle ground—a coin that’s just less dumb.</p>
+        
+        <!-- Embedded Elon Musk Tweet -->
         <div class="tweet-embed">
             <blockquote class="twitter-tweet" data-conversation="none">
                 <a href="https://x.com/elonmusk/status/1362598034866118658">Elons Tweet from February 19, 2021 :)</a>
@@ -137,6 +141,7 @@
                 <li>Hedge against stupidity inflation</li>
             </ul>
         </div>
+
         <div class="feature-box">
             <h3>📈 Tokenomics</h3>
             <ul>
@@ -147,30 +152,47 @@
         </div>
     </div>
 
+    <!-- Contract Address Section -->
     <div class="section">
         <h2>🔗 Contract Address</h2>
         <div class="network-info">
-            <img src="https://i.ibb.co/bj4CtNxx/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
-            <p class="network-text">BUY WITH SOL!</p>
+            <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+            <p class="network-text">SOLANA MAINNET</p>
         </div>
         <div class="ca-box">
-            <input type="text" class="ca-input" value="Coming Soon" id="contractAddress" readonly>
+            <input type="text" class="ca-input" value="6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN" id="contractAddress" readonly>
             <br>
             <button class="copy-btn" onclick="copyAddress()">Copy Address</button>
         </div>
+    </div>
+
+    <div class="section">
+        <h2>🔥 Roadmap</h2>
+        <p class="phase">✅ Phase 1: Tweet at Elon</p>
+        <p class="phase">✅ Phase 2: Take over X for shilling too hard</p>
+        <p class="phase">✅ Phase 3: Billion-dollar market cap before breakfast</p>
+    </div>
+
+    <div class="section" style="text-align: center; font-style: italic;">
+        "Holding $LDC is simply a less dumb form of liquidity than cash."<br>
+        - You, probably.
     </div>
 
     <footer style="text-align: center; margin-top: 40px; color: #666;">
         © 2025 Less Dumb Coin - The Smart Choice for Dumb Money
     </footer>
 
+    <!-- Twitter embed script -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+    <!-- Copy Function Script -->
     <script>
         function copyAddress() {
             const ca = document.getElementById('contractAddress');
             ca.select();
-            ca.setSelectionRange(0, 99999);
+            ca.setSelectionRange(0, 99999); // For mobile devices
             document.execCommand('copy');
+            
             const btn = document.querySelector('.copy-btn');
             btn.textContent = 'Copied!';
             setTimeout(() => {
