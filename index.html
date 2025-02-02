@@ -1,41 +1,129 @@
-import { Button } from "@/components/ui/button";
-
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
-      <h1 className="text-5xl font-bold text-yellow-400 text-center">
-        Less Dumb Coin ($LDC)
-      </h1>
-      <p className="mt-4 text-lg text-center max-w-2xl">
-        "Simply a less dumb form of liquidity." Inspired by Elon Musk’s legendary tweet, $LDC is the perfect balance between memes and utility.
-      </p>
-      <Button className="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-xl text-lg hover:bg-yellow-500">
-        Buy $LDC
-      </Button>
-      
-      <div className="mt-12 max-w-4xl text-center">
-        <h2 className="text-3xl font-semibold text-yellow-400">Tokenomics & Roadmap</h2>
-        <p className="mt-4 text-lg">
-          🚀 69,420,000,000 Total Supply | 4.20% Transaction Fee | 100% Community-Owned
-        </p>
-        <p className="mt-4 text-lg">
-          Phase 1: Launch & Community Building | Phase 2: Exchange Listings | Phase 3: Ecosystem Expansion
-        </p>
-      </div>
-
-      <div className="mt-12 max-w-4xl text-center">
-        <h2 className="text-3xl font-semibold text-yellow-400">How to Buy</h2>
-        <p className="mt-4 text-lg">
-          1️⃣ Install MetaMask | 2️⃣ Buy BNB/ETH | 3️⃣ Swap for $LDC on Uniswap/PancakeSwap
-        </p>
-      </div>
-
-      <div className="mt-12 max-w-4xl text-center">
-        <h2 className="text-3xl font-semibold text-yellow-400">Join the Community</h2>
-        <p className="mt-4 text-lg">
-          Follow us on <a href="#" className="underline text-yellow-400">Twitter</a> | Join the <a href="#" className="underline text-yellow-400">Telegram</a>
-        </p>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Less Dumb Coin ($LDC)</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .header {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(45deg, #ff9900, #ff5500);
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 30px;
+        }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .twitter-btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .features {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .feature-box {
+            flex: 1;
+            min-width: 250px;
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 15px;
+        }
+        .phase {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        .tweet-embed {
+            margin: 25px 0;
+            text-align: center;
+            overflow: hidden;
+            border-radius: 15px;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🪙 Less Dumb Coin ($LDC)</h1>
+        <h2>"Smarter than cash, dumber than Bitcoin – just right."</h2>
     </div>
-  );
-}
+
+    <a href="https://x.com/lessdumbcoin" class="twitter-btn" target="_blank">🐦 Follow on X</a>
+
+    <div class="section">
+        <h2>📖 Backstory</h2>
+        <p>Inspired by Elon Musk’s legendary 2021 tweet, Less Dumb Coin ($LDC) embraces the idea that cash is dumb, Bitcoin is adventurous, but there’s a perfect middle ground—a coin that’s just less dumb.</p>
+        
+        <!-- Embedded Elon Musk Tweet -->
+        <div class="tweet-embed">
+            <blockquote class="twitter-tweet" data-conversation="none">
+                <a href="https://x.com/elonmusk/status/1362598034866118658">Elons Tweet from February 19, 2021 :)</a>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>🔹 Why $LDC?</h3>
+            <ul>
+                <li>Tesla-level innovation with meme energy</li>
+                <li>"Less dumb" than fiat, more fun than Bitcoin</li>
+                <li>Community-driven decentralization</li>
+                <li>Hedge against stupidity inflation</li>
+            </ul>
+        </div>
+
+        <div class="feature-box">
+            <h3>📈 Tokenomics</h3>
+            <ul>
+                <li>Supply: ∞ (but less dumb)</li>
+                <li>Liquidity locked longer than your gym membership</li>
+                <li>0% taxes (we're not that smart)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔥 Roadmap</h2>
+        <p class="phase">✅ Phase 1: Tweet at Elon</p>
+        <p class="phase">✅ Phase 2: Take over X for shilling too hard</p>
+        <p class="phase">✅ Phase 3: Billion-dollar market cap before breakfast</p>
+    </div>
+
+    <div class="section" style="text-align: center; font-style: italic;">
+        "Holding $LDC is simply a less dumb form of liquidity than cash."<br>
+        - You, probably.
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px; color: #666;">
+        © 2025 Less Dumb Coin - The Smart Choice for Dumb Money
+    </footer>
+
+    <!-- Twitter embed script -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
