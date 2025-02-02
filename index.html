@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Less Dumb Coin ($LDC)</title>
-    <title>Now on Solona!</title>
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -65,7 +64,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        /* New CA Section Styles */
+        /* Updated CA Section Styles */
         .ca-box {
             text-align: center;
             margin: 20px 0;
@@ -90,6 +89,24 @@
         }
         .copy-btn:hover {
             background: #0056b3;
+        }
+        /* New Solana Network Styles */
+        .network-info {
+            text-align: center;
+            margin: 15px 0;
+            padding: 15px;
+            background: #fff3e0;
+            border-radius: 15px;
+        }
+        .solana-logo {
+            width: 120px;
+            margin: 10px auto;
+            display: block;
+        }
+        .network-text {
+            color: #00ff88;
+            font-weight: bold;
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -138,6 +155,10 @@
     <!-- Contract Address Section -->
     <div class="section">
         <h2>🔗 Contract Address</h2>
+        <div class="network-info">
+            <img src="https://i.ibb.co/Q7WT0YZZ/solana-sol-logo.png" alt="Solana Logo" class="solana-logo">
+            <p class="network-text">SOLANA MAINNET</p>
+        </div>
         <div class="ca-box">
             <input type="text" class="ca-input" value="CA COMING SOON" id="contractAddress" readonly>
             <br>
